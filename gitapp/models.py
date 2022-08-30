@@ -7,3 +7,8 @@ class Teacher(models.Model):
     class Meta:
         db_name = 'Teacher'
     
+class Student(models.Model):
+    name = models.CharField(max_length=100)
+    number = models.IntegerField()
+    class Meta:
+        db_name = 'Student'
